@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme (Night Mode) -->
+    <color name="dark_bg_primary">#FF0A0A1F</color>
+    <color name="dark_bg_secondary">#FF12121A</color>
+    <color name="dark_surface">#FF1E1E2E</color>
+    <color name="dark_text_primary">#FFFFFFFF</color>
+    <color name="dark_text_secondary">#FFA0A0B0</color>
+    <color name="dark_border">#FF2A2A35</color>
+
+    <!-- Light Theme Overrides (for night mode, use dark variants) -->
+    <color name="light_bg_primary">#FF0A0A1F</color>
+    <color name="light_bg_secondary">#FF12121A</color>
+    <color name="light_surface">#FF1E1E2E</color>
+    <color name="light_text_primary">#FFFFFFFF</color>
+    <color name="light_text_secondary">#FFA0A0B0</color>
+    <color name="light_border">#FF2A2A35</color>
+
+    <!-- Accents (same for dark) -->
+    <color name="teal_primary_dark">#FF00BFA5</color>
+    <color name="teal_primary_light">#FF00BFA5</color>
+    <color name="cyan_secondary_dark">#FF00E5FF</color>
+    <color name="cyan_secondary_light">#FF00E5FF</color>
+
+    <!-- Message Bubbles (dark theme) -->
+    <color name="user_bubble_teal_start">#FF00BFA5</color>
+    <color name="user_bubble_teal_end">#FF009688</color>
+    <color name="ai_bubble_dark">#FF1E1E2E</color>
+    <color name="ai_bubble_light">#FF1E1E2E</color>
+
+    <!-- Status (dark variants) -->
+    <color name="error_light">#FFFF5C5C</color>
+    <color name="error_dark">#FFFF5C5C</color>
+    <color name="success">#FF4CAF50</color>
+    <color name="success_dark">#FF4CAF50</color>
+
+    <!-- Legacy -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF9C27B0</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF00897B</color>
+    <color name="teal_900">#FF004D40</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
