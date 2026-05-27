@@ -176,7 +176,7 @@ fun AboutScreen(
                         
                         val technologies = listOf(
                             stringResource(R.string.tech_kotlin_compose),
-                            stringResource(R.string.tech_mediapipe_litert),
+//                             stringResource(R.string.tech_mediapipe_litert),
                             stringResource(R.string.tech_quantization),
                             stringResource(R.string.tech_gpu_acceleration),
                             stringResource(R.string.tech_models_source)
@@ -235,12 +235,12 @@ fun AboutScreen(
                             
                             TextButton(
                                 onClick = {
-                                    uriHandler.openUri("mailto:timmy@llm-hub.app")
+                                    uriHandler.openUri("mailto:kornellaotf@gmail.com")
                                 },
                                 modifier = Modifier.padding(start = 28.dp)
                             ) {
                                 Text(
-                                    text = "timmy@llm-hub.app",
+                                    text = "kornellaotf@gmail.com",
                                     style = MaterialTheme.typography.bodyMedium,
                                     color = MaterialTheme.colorScheme.primary
                                 )
@@ -271,7 +271,7 @@ fun AboutScreen(
                             
                             TextButton(
                                 onClick = {
-                                    uriHandler.openUri("https://github.com/timmyy123/LLM-Hub")
+                                    uriHandler.openUri("https://github.com/KornellaOtf/anywaa-connect")
                                 },
                                 modifier = Modifier.padding(start = 28.dp)
                             ) {
@@ -320,7 +320,7 @@ fun AboutScreen(
                         Spacer(modifier = Modifier.height(8.dp))
                         
                         Text(
-                            text = stringResource(R.string.nexa_sdk_credit),
+//                             text = stringResource(R.string.nexa_sdk_credit),
                             style = MaterialTheme.typography.bodyMedium,
                             textAlign = TextAlign.Justify,
                             color = MaterialTheme.colorScheme.onSurface

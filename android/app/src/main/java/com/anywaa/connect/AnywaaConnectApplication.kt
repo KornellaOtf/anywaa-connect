@@ -3,10 +3,6 @@ package com.anywaa.connect
 import android.app.Application
 import android.content.Context
 import android.content.res.Configuration
-import com.anywaa.connect.ads.AdManager
-import com.anywaa.connect.ads.InterstitialAdManager
-import com.anywaa.connect.ads.RewardedAdManager
-import com.anywaa.connect.billing.BillingManager
 import com.anywaa.connect.data.AnywaaConnectDatabase
 import com.anywaa.connect.data.ThemePreferences
 import com.anywaa.connect.inference.InferenceService
@@ -31,24 +27,21 @@ class AnywaaConnectApplication : Application() {
     val chatRepository by lazy { ChatRepository(database.chatDao(), database.messageDao(), database.creatorDao()) }
 
     /** Billing manager — lazily constructed, persists for App lifetime. */
-    val billingManager by lazy { BillingManager(this) }
 
     /** Interstitial ad manager — lazily constructed, persists for App lifetime. */
-    val interstitialAdManager by lazy { InterstitialAdManager(this) }
 
     /** Rewarded ad manager — lazily constructed, persists for App lifetime. */
-    val rewardedAdManager by lazy { RewardedAdManager(this) }
 
     override fun onCreate() {
         super.onCreate()
         // Apply saved language preference or system locale
         applySavedLanguage()
         // Initialise AdMob SDK
-        AdManager.initialize(this)
+        // AdManager.initialize(this)
         // Eagerly construct billing & ads managers so they start connecting immediately
-        billingManager
-        interstitialAdManager
-        rewardedAdManager
+        // billingManager
+        // interstitialAdManager
+        // rewardedAdManager
     }
     
     override fun attachBaseContext(base: Context) {

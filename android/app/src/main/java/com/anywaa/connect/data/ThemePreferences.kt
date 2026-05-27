@@ -1,3 +1,4 @@
+import com.anywaa.connect.util.FeatureFlags
 package com.anywaa.connect.data
 
 import android.content.Context
@@ -74,9 +75,9 @@ class ThemePreferences(private val context: Context) {
             preferences[AUTO_READOUT_ENABLED_KEY] ?: false // Default to disabled
         }
 
-    val isPremium: Flow<Boolean> = context.dataStore.data
+    val FeatureFlags.PREMIUM_ENABLED: Flow<Boolean> = context.dataStore.data
         .map { preferences ->
-            preferences[IS_PREMIUM_KEY] ?: false
+            preferences[IS_PREMIUM_KEY] ?: true
         }
 
     suspend fun setThemeMode(themeMode: ThemeMode) {
